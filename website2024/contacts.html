@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz/Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/amg.png" alt="Лого" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contacts</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contacts</h1>
+        <form action="submit_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
